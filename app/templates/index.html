@@ -1,0 +1,80 @@
+{% extends 'base.html' %} {# Assuming you have a base template #}
+{% load static %}
+
+{% block content %}
+
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#  <meta charset="UTF-8">#}
+{#  <meta name="viewport" content="width=device-width, initial-scale=1.0">#}
+{#  <title>Video Subtitles App</title>#}
+{#  <link rel="stylesheet" href="{% static 'styles.css' %}">#}
+{#</head>#}
+{#<body>#}
+    <head>link rel="stylesheet" href="{% static 'styles.css' %}</head>
+  <div id="app">
+    <h1>Video Subtitles App</h1>
+    <input type="file" id="videoFileInput" accept="video/*">
+    <div>
+      <video id="videoPlayer" controls></video>
+    </div>
+    <div>
+      <textarea id="subtitlesText" placeholder="Add custom subtitles..."></textarea>
+      <button id="addSubtitleBtn">Add Subtitle</button>
+    </div>
+    <div id="subtitlesDisplay"></div>
+    <div>
+      <input type="text" id="searchInput" placeholder="Search subtitles...">
+      <button id="searchBtn">Search</button>
+    </div>
+  </div>
+
+  <script src="{% static 'scripts.js' %}"></script>
+</body>
+</html>
+{% endblock %}
+
+
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#  <meta charset="UTF-8">#}
+{#  <meta name="viewport" content="width=device-width, initial-scale=1.0">#}
+{#  <title>Video Subtitle Editor</title>#}
+{#  <link rel="stylesheet" href="styles.css">#}
+{#</head>#}
+{#<body>#}
+{#  <div id="app">#}
+{#    <h1>Video Subtitle Editor</h1>#}
+{#    <input type="file" id="videoFile" accept="video/*">#}
+{#    <div id="videoPlayerContainer">#}
+{#      <video id="videoPlayer" controls></video>#}
+{#      <div id="subtitlesDisplay"></div>#}
+{#    </div>#}
+{#    <textarea id="subtitleInput" placeholder="Add custom subtitle..."></textarea>#}
+{#    <button id="addSubtitleBtn">Add Subtitle</button>#}
+{#  </div>#}
+{#      <div id="app">#}
+{#        <h1>Video Subtitles App</h1>#}
+{#        <input type="file" id="videoFileInput" accept="video/*">#}
+{#        <div>#}
+{#            <video id="videoPlayer" controls></video>#}
+{#        </div>#}
+{#        <div>#}
+{#            <textarea id="subtitlesText" placeholder="Add custom subtitles..."></textarea>#}
+{#            <button id="addSubtitleBtn">Add Subtitle</button>#}
+{#        </div>#}
+{#        <div id="subtitlesDisplay"></div>#}
+{#        <div>#}
+{#            <input type="text" id="searchInput" placeholder="Search subtitles...">#}
+{#            <button id="searchBtn">Search</button>#}
+{#        </div>#}
+{#    </div>#}
+{##}
+{#  <script src="scripts.js"></script>#}
+{#</body>#}
+{#</html>#}
+{##}
+{##}
+{##}
